@@ -11,6 +11,11 @@
 
 <body>
     <div id="vue-app">
+        <h1>Conditionals</h1>
+        <button v-on:click="error = !error">Toggle Error</button>
+        <button v-on:click="success = !success">Toggle Success</button>
+        <p v-if="error">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis dolorem molestiae quo nobis labore quasi, molestias consequuntur aliquam voluptas hic incidunt amet harum, necessitatibus dolorum sed error quisquam eaque?</p>
+        <p v-else-if="success">Whoo success!</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>

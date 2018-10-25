@@ -1,3 +1,7 @@
-new Vue({
-    el: "#vue-app"
+const app = new Vue({
+    el: "#vue-app",
+    data: {
+        error: false,
+        success: false
+    }
 })
