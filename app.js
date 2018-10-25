@@ -1,14 +1,16 @@
 let app = new Vue({
     el: "#vue-app",
     data: {
-        name: '',
-        age: ''
+        available: false,
+        nearby: false
     },
-    methods: {
-        logName: function() {
-        },
-        logAge: function() {
-            console.log('You entered your age')
+    methods: {},
+    computed: {
+        compClasses: function() {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 })
