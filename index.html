@@ -11,9 +11,9 @@
 
 <body>
     <div id="vue-app">
-        <h1>{{ greet('Afternoon') }}</h1>
-        <h1>{{ name }}</h1>
-        <p>job: {{job}}</p>
+        <a v-bind:href="website">Twitter</a>
+        <input type="text" v-bind:value="name">
+        <p v-html="websiteTag"></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>
